@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  db-prisma:
+    image: postgres:11.5-alpine
+    environment:
+      POSTGRES_PASSWORD: prisma
+      POSTGRES_USER: prisma
+      POSTGRES_DB: prisma
+    ports:
+      - "5432:5432"
